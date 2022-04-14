@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
+       
           child: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -29,14 +29,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 end: Alignment.bottomLeft,
                 colors: [
                   Colors.blue,
-                  Colors.red,
+                  Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
+                
                 ],
               ),
             ),
             child: Column(
               children: [
                 SizedBox(
-                  height: 100.0,
+                  height: 20.0,
                 ),
                 Center(
                   child: Text(
@@ -49,10 +52,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 SizedBox(
-                  height: 50.0,
+                  height: 20.0,
                 ),
                 Container(
-                  height: 120.0,
+                  height: 110.0,
                   // alignment: Alignment.center,
                   child: Card(
                     color: Colors.white,
@@ -88,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Container(
-                  height: 120.0,
+                  height: 110.0,
                   // alignment: Alignment.center,
                   child: Card(
                     color: Colors.white,
@@ -124,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Container(
-                  height: 120.0,
+                  height: 110.0,
                   // alignment: Alignment.center,
                   child: Card(
                     color: Colors.white,
@@ -160,7 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Container(
-                  height: 120.0,
+                  height: 110.0,
                   // alignment: Alignment.center,
                   child: Card(
                     color: Colors.white,
@@ -196,7 +199,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Container(
-                  height: 120.0,
+                  height: 110.0,
                   // alignment: Alignment.center,
                   child: Card(
                     color: Colors.white,
@@ -234,7 +237,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
-        ),
+        
       ),
     );
   }

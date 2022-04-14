@@ -19,46 +19,87 @@ class Main_Screen extends StatefulWidget {
 
 class _Main_ScreenState extends State<Main_Screen> {
      dialogcontroller controller = Get.put(dialogcontroller());
+     late double height;
+  late double width;
 
   @override
   Widget build(BuildContext context) {
+    
+    height = MediaQuery.of(context).size.height;
+    width = MediaQuery.of(context).size.width;
+
     return  Scaffold(
       // resizeToAvoidBottomInset: false,
       body: SafeArea(
  
-          child: Container(
-           
-            decoration: BoxDecoration(
-                gradient: LinearGradient(
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              colors: [
-                Colors.blue,
-                Colors.red,
-              ],
-            )),
-            child: Center(
-                child: Column(
-              children: [
+            child: Container( 
+                  
+                    //  width: width * 0.26,
+
              
-                Container(
-                  height: 280,
-
-                  child: Image.asset('images/coldones.png'),
-                ),
-               Padding(
-                 padding: const EdgeInsets.only(left: 25,right: 25),
-                 child: Column(children: [
-                     GestureDetector(
-                       onTap: (){
-                          controller.loginfirst();
-
-                        // Get.to(Sing_InOption(),);
-                       },
-                       child: Container(
-                     
-                       height: 120,
-                                         //  width: 330,
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                
+                colors: [
+                  Colors.blue,
+                  Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
+                ],
+              )
+              ),
+              child: Center(
+                  child: Column(
+                children: [
+               
+                  Container(
+                    height: 320,
+          
+                    child: Image.asset('images/coldones.png'),
+                  ),
+                 Padding(
+                   padding: const EdgeInsets.only(left: 25,right: 25),
+                   child: Column(children: [
+                       GestureDetector(
+                         onTap: (){
+                            controller.loginfirst();
+          
+                          // Get.to(Sing_InOption(),);
+                         },
+                         child: Container(
+                       
+                         height: 140,
+                                           //  width: 330,
+                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
+                          color: Colors.blue[300],
+                           boxShadow: [
+                          BoxShadow(
+                            color: Colors.blue,
+                            // offset: const Offset(
+                            //   5.0,
+                            //   5.0,
+                            // ),
+                            // blurRadius: 10.0,
+                            // spreadRadius: 2.0,
+                          ), //BoxShadow
+                                           
+                                           ],
+                         ),
+                         child: Row(
+                           mainAxisAlignment: MainAxisAlignment.center,
+                           children: [
+                           Text("GAMES", style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400), )
+                         ],),
+                         
+                                          ),
+                       ),
+                     SizedBox(height: 15,),
+                       Container(
+          
+                       height: 50,
+                      //  width: 330,
                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
                         color: Colors.blue[300],
                          boxShadow: [
@@ -71,94 +112,67 @@ class _Main_ScreenState extends State<Main_Screen> {
                           // blurRadius: 10.0,
                           // spreadRadius: 2.0,
                         ), //BoxShadow
-                                         
-                                         ],
+                      
+                      ],
                        ),
+                       child: GestureDetector(
+                         onTap: (){
+                           Get.to( Navigatiobar());
+                         },
+                         child: Row(
+                           mainAxisAlignment: MainAxisAlignment.center,
+                           children: [
+                           Text("FRIENDS", style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400), )
+                         ],),
+                       ),
+                       
+                     ),
+               
+                SizedBox(height: 15,),
+                       Container(
+          
+                       height: 50,
+                      //  width: 330,
+                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
+                        color: Colors.blue[300],
+                         boxShadow: [
+                        BoxShadow(
+                          color: Colors.blue,
+                          // offset: const Offset(
+                          //   5.0,
+                          //   5.0,
+                          // ),
+                          // blurRadius: 10.0,
+                          // spreadRadius: 2.0,
+                        ), //BoxShadow
+                      
+                      ],
+                       ),
+                       
                        child: Row(
+          
                          mainAxisAlignment: MainAxisAlignment.center,
                          children: [
-                         Text("GAMES", style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400), )
+                         Text("COCKTAILS", style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400), )
                        ],),
                        
-                                        ),
                      ),
-                   SizedBox(height: 20,),
-                     Container(
-
-                     height: 65,
-                    //  width: 330,
-                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
-                      color: Colors.blue[300],
-                       boxShadow: [
-                      BoxShadow(
-                        color: Colors.blue,
-                        // offset: const Offset(
-                        //   5.0,
-                        //   5.0,
-                        // ),
-                        // blurRadius: 10.0,
-                        // spreadRadius: 2.0,
-                      ), //BoxShadow
-                    
-                    ],
-                     ),
-                     child: GestureDetector(
-                       onTap: (){
-                         Get.to( Navigatiobar());
-                       },
-                       child: Row(
-                         mainAxisAlignment: MainAxisAlignment.center,
-                         children: [
-                         Text("FRIENDS", style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400), )
-                       ],),
-                     ),
-                     
-                   ),
-             
-              SizedBox(height: 20,),
-                     Container(
-
-                     height: 65,
-                    //  width: 330,
-                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
-                      color: Colors.blue[300],
-                       boxShadow: [
-                      BoxShadow(
-                        color: Colors.blue,
-                        // offset: const Offset(
-                        //   5.0,
-                        //   5.0,
-                        // ),
-                        // blurRadius: 10.0,
-                        // spreadRadius: 2.0,
-                      ), //BoxShadow
-                    
-                    ],
-                     ),
-                     
-                     child: Row(
-
-                       mainAxisAlignment: MainAxisAlignment.center,
+                     SizedBox(height: 15,),
+                     Row(
+                       mainAxisAlignment: MainAxisAlignment.end,
                        children: [
-                       Text("COCKTAILS", style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400), )
+          
+                       IconButton(onPressed: (){Get.to( Setting());}, icon: Icon(Icons.settings, size: 26,))
                      ],),
-                     
-                   ),
-                   SizedBox(height: 20,),
-                   Row(
-                     mainAxisAlignment: MainAxisAlignment.end,
-                     children: [
-
-                     IconButton(onPressed: (){Get.to( Setting());}, icon: Icon(Icons.settings, size: 26,))
+                   
                    ],),
-                 
-                 ],),
-               )
-                
-              ],
-            )
+                 )
+                  
+                ],
+              )
+              ),
             ),
-          ),
+          
        
       ),);
   }

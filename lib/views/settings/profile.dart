@@ -14,7 +14,7 @@ class _ProfileState extends State<Profile> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: SafeArea(
-        child: SingleChildScrollView(
+       
           child: Container(
             decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -22,8 +22,10 @@ class _ProfileState extends State<Profile> {
               end: Alignment.bottomLeft,
               colors: [
                 Colors.blue,
-                Colors.red,
-              ],
+               Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
+                ],
             )),
             child: Center(
                 child: Column(
@@ -206,7 +208,7 @@ class _ProfileState extends State<Profile> {
                   height: 10,
                 ),
                 Container(
-                  height: 120,
+                  height: 110,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(14)),
@@ -252,13 +254,14 @@ class _ProfileState extends State<Profile> {
                           ),
                         ),
                       ),
+                     
                     ],
                   ),
                 )
               ],
             )),
           ),
-        ),
+        
       ),
     );
   }

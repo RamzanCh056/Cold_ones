@@ -25,7 +25,7 @@ class _SettingState extends State<Setting> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
+     
           child: Container(
             decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -33,8 +33,11 @@ class _SettingState extends State<Setting> {
               end: Alignment.bottomLeft,
               colors: [
                 Colors.blue,
-                Colors.red,
-              ],
+                Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
+                ],
+              
             )),
             child: Center(
                 child: Column(
@@ -61,7 +64,7 @@ class _SettingState extends State<Setting> {
                       fontWeight: FontWeight.bold),
                 )),
                 SizedBox(
-                  height: 30,
+                  height: 15,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(14.0),
@@ -97,7 +100,7 @@ class _SettingState extends State<Setting> {
                             ],
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 8,
                           ),
                         ],
                       ),
@@ -144,7 +147,7 @@ class _SettingState extends State<Setting> {
                             ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 8,
                           ),
                         ],
                       ),
@@ -191,7 +194,7 @@ class _SettingState extends State<Setting> {
                             ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 8,
                           ),
                         ],
                       ),
@@ -238,7 +241,7 @@ class _SettingState extends State<Setting> {
                             ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 8,
                           ),
                         ],
                       ),
@@ -284,7 +287,7 @@ class _SettingState extends State<Setting> {
                               ],
                             ),
                             SizedBox(
-                              height: 10,
+                              height: 8,
                             ),
                           ],
                         ),
@@ -331,16 +334,14 @@ class _SettingState extends State<Setting> {
                               ],
                             ),
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
+                         
                         ],
                       ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 8,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -367,7 +368,7 @@ class _SettingState extends State<Setting> {
               ],
             )),
           ),
-        ),
+        
       ),
     );
   }

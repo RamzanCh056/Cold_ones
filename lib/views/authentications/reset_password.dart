@@ -24,8 +24,10 @@ class _ResetState extends State<Reset> {
             end: Alignment.bottomLeft,
             colors: [
               Colors.blue,
-              Colors.red,
-            ],
+            Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
+                ],
           )),
           child: Center(
               child: Column(

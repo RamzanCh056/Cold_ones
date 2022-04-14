@@ -14,9 +14,9 @@ class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
+     
       body: SafeArea(
-          child: SingleChildScrollView(
+     
             child: Container(
                   decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -24,8 +24,10 @@ class _SearchState extends State<Search> {
             end: Alignment.bottomLeft,
             colors: [
               Colors.blue,
-              Colors.red,
-            ],
+             Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
+                ],
                   )),
                   child: Column(
             children: [
@@ -81,7 +83,7 @@ class _SearchState extends State<Search> {
                 ),
               ),
               SizedBox(
-                height: 50,
+                height: 20,
               ),
               Padding(
                 padding: const EdgeInsets.all(14.0),
@@ -248,7 +250,8 @@ class _SearchState extends State<Search> {
             ],
                   ),
                 ),
-          )),
+          
+          ),
     );
   }
 }

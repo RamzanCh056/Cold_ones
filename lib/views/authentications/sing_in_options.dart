@@ -24,8 +24,10 @@ class _Sing_InOptionState extends State<Sing_InOption> {
               colors: [
                 Colors.blue,
                 
-                Colors.red,
-              ],
+              Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
+                ],
             )
           ),
           child: Center(
@@ -59,12 +61,12 @@ class _Sing_InOptionState extends State<Sing_InOption> {
                       )
                   ],),
                   Column(children: [
-   SignInButton(
-            Buttons.AppleDark,
-            onPressed: () {
+  //  SignInButton(
+  //           Buttons.AppleDark,
+  //           onPressed: () {
               
-            },
-          ),
+  //           },
+  //         ),
 
                          SignInButton(
   Buttons.Google,

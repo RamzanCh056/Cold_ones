@@ -22,16 +22,18 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: SafeArea(
-        child: SingleChildScrollView(
+      
           child: Container(
-            height: 800.0,
+         
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topRight,
                 end: Alignment.bottomLeft,
                 colors: [
                   Colors.blue,
-                  Colors.red,
+                Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
                 ],
               ),
             ),
@@ -100,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
-        ),
+        
       ),
     );
   }

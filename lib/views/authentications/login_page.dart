@@ -3,6 +3,7 @@ import 'package:cold_ones/views/Game.dart';
 import 'package:cold_ones/views/authentications/reset_password.dart';
 import 'package:cold_ones/views/authentications/singup_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/instance_manager.dart';
 
@@ -12,19 +13,21 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // resizeToAvoidBottomInset: false,
+       resizeToAvoidBottomInset: false,
       body: SafeArea(
  
           child: Container(
-            height: 750,
+            
             decoration: BoxDecoration(
                 gradient: LinearGradient(
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
               colors: [
                 Colors.blue,
-                Colors.red,
-              ],
+               Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
+                ],
             )),
             child: Center(
                 child: Column(

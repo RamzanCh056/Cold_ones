@@ -15,7 +15,7 @@ class _ProfileNielsState extends State<ProfileNiels> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: SingleChildScrollView(
+          
             child: Container(
                   decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -23,8 +23,10 @@ class _ProfileNielsState extends State<ProfileNiels> {
             end: Alignment.bottomLeft,
             colors: [
               Colors.blue,
-              Colors.red,
-            ],
+            Colors.blue,
+                  Color.fromARGB(255, 224, 31, 18),
+                   Color.fromARGB(255, 224, 31, 18),
+                ],
                   )),
                   child: Column(
             children: [
@@ -350,7 +352,8 @@ class _ProfileNielsState extends State<ProfileNiels> {
             ],
                   ),
                 ),
-          )),
+          
+          ),
     );
   }
 }
