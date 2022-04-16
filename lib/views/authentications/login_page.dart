@@ -1,4 +1,5 @@
 
+import 'package:cold_ones/controller/login_controller.dart';
 import 'package:cold_ones/views/Game.dart';
 import 'package:cold_ones/views/authentications/reset_password.dart';
 import 'package:cold_ones/views/authentications/singup_page.dart';
@@ -7,9 +8,16 @@ import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/instance_manager.dart';
 
-class Login extends StatelessWidget {
-  const Login({Key? key}) : super(key: key);
+class Login extends StatefulWidget {
+  const Login({ Key? key }) : super(key: key);
 
+  @override
+  State<Login> createState() => _LoginState();
+}
+
+class _LoginState extends State<Login> {
+
+    logincontroller controller = Get.put(logincontroller());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
