@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "925087858927",
+    "project_id": "coldones-d3a73",
+    "storage_bucket": "coldones-d3a73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925087858927:android:a0a9903357892c3888db1a",
+        "android_client_info": {
+          "package_name": "com.example.cold_ones"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925087858927-ca0d7gtal2thhre7qe6k48ttqppup9k0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEjTvvvqWstR02NkwKrB5fIq8LphTNkFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925087858927-ca0d7gtal2thhre7qe6k48ttqppup9k0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
